@@ -86,10 +86,26 @@ h1 {
 	padding: 15px;
 	flex-wrap: wrap;
 
+
 }
 
-nav .link {
-	flex:1;
+.navLink {
+	
+	flex:1 1 auto;
+	padding: 10px;
+}
+
+header a {
+	color: gray;
+	text-decoration: none;
+
+}
+
+header a:hover {
+	color: pink;
+	text-decoration: dashed;
+	background-color: yellow;
+
 }
 
 section {
