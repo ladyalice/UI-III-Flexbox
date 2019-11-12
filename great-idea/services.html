@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Great Idea!</title>
+  <title>Great Idea! Services</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index-flex.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,21 +17,22 @@
 <body>
 <div class="container">
 	<header>
-		<div class="oneLine">
+	<div class="oneLine">
 		<nav>
-			<a href="index.html">Home</a>
-	 		<a href="services.html">Services</a>
-	        <a href="#">Product</a>
-	        <a href="#">Vision</a>
-	        <a href="#">Features</a>
-	        <a href="#">About</a>
-	        <a href="#">Contact</a>
+			<a href="index.html" class="link">Home</a>
+	 		<a href="services.html" class="link">Services</a>
+	        <a href="#" class="link">Product</a>
+	        <a href="#" class="link">Vision</a>
+	        <a href="#" class="link">Features</a>
+	        <a href="#" class="link">About</a>
+	        <a href="#" class="link">Contact</a>
 		</nav>
 		<img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
-
-
-		<img class="services-header-img" src="img/services-header.jpg" alt="Our services header image">
 	</div>
+
+	<div class="heroImg">
+		<img class="services-header-img" src="img/services-header.jpg" alt="Our services header image">
+</div>
 	</header>
 	<section>
 
@@ -40,37 +41,39 @@
 				Our services provide the best digital value in nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque eleifend. Mauris euismod facilisis iaculis.
 			</p>
 	</section>
+	<hr>
 	<section>
-			<hr>
+			
 	
-			<div class="twoColumnsLeft">
+			<div class="serviceList">
+				<div class="box">
 
-				<h2>Digital Design</h2>
-				<p>
+					<h2>Digital Design</h2>
+					<p>
 					Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
 				eleifend. Mauris euismod facilisis iaculis.
 
+					</p>
+					<button class="buttonServices"> 
+						Learn More
+					</button>
+				</div>
+				
+
+				<div class="box">
+
+				<h2>UX / UI</h2>
+				<p>
+				Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
+				eleifend. Mauris euismod facilisis iaculis.
 				</p>
 				<button class="buttonServices"> 
-					Learn More
+						Learn More
 				</button>
-					
-			</div>
+				</div>
+	
 
-			<div class="twoColumnsRight">
-
-			<h2>UX / UI</h2>
-			<p>
-			Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
-			eleifend. Mauris euismod facilisis iaculis.
-			</p>
-			<button class="buttonServices"> 
-					Learn More
-			</button>
-			</div>
-
-
-			<div class="twoColumnsLeft">
+			<div class="box">
 				<h2>Digital Marketing</h2>
 				<p>
 				Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
@@ -80,7 +83,7 @@
 						Learn More
 				</button>
 			</div>
-			<div class="twoColumnsRight">
+			<div class="box">
 				<h2>Web Development</h2>
 					<p>
 					Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
@@ -90,7 +93,7 @@
 						Learn More
 				</button>
 			</div>
-			<div class="twoColumnsLeft">
+			<div class="box">
 				<h2>iOS Development</h2>
 					<p>
 					Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
@@ -100,7 +103,7 @@
 						Learn More
 				</button>
 			</div>
-			<div class="twoColumnsRight">
+			<div class="box">
 				<h2>Android Development</h2>
 					<p>
 					Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
@@ -112,27 +115,30 @@
 			</div>
 
 		</section>
-
-			<div class="twoColumnsLeftFooter">
+		<hr>
+		<section>
+			<div class="facts">
 			<h2>Some Facts About Our Services</h2>
 				<p>
 				Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
 				eleifend. Mauris euismod facilisis iaculis.
 				</p>
 				<br>
+			
 				<ul>
 					<li>Awesome thing</li>
 					<li>Amazing thing</li>
 					<li>Cool thing</li>
 					<li>Great thing</li>
 				</ul>
+			
 			</div>
 
-			<div class="twoColumnsRightFooter">
+			<div class="facts">
 				<img class="services-info-img" src="img/services-info.png" alt="one of our employees hard at work">
 			</div>
 
-
+		</section>
 			<footer>
 			<div class="copy">
 	    		<p>

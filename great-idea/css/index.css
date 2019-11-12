@@ -146,10 +146,10 @@ header .slogan-only {
 }
 */
 
-
-header h1 {
+h1 {
 	font-size: 60px;
-	text-align: center
+	text-align: center;
+	margin-top: 20px;
 }
 
 header .buttonStart {
